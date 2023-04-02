@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Que horas são? <input type="text" name="txthora" id="txthora">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="res"></div>
+</body>
+<script>
+    function verificar() {
+        var txth = window.document.querySelector('input#txthora')
+        var res = window.document.querySelector('div#res')
+        var hora = txth.value
+        res.innerHTML = `Agora são ${hora}!`
+        if (hora >= 6 && hora <= 12) {
+            res.innerHTML += 'Então um Bom Dia :)'
+        } else if (hora >= 12 && hora <= 18) {
+            res.innerHTML += 'Então uma Boa Tarde :D'
+        } else {
+            res.innerHTML += 'Então uma Boa Noite :p'
+        }
+
+    }
+</script>
+</html>
