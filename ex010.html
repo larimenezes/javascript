@@ -16,15 +16,16 @@
         var txth = window.document.querySelector('input#txthora')
         var res = window.document.querySelector('div#res')
         var hora = txth.value
-        res.innerHTML = `Agora são ${hora}!`
+        res.innerHTML = `<p>Agora são ${hora} hora!</p>`
         if (hora >= 6 && hora <= 12) {
             res.innerHTML += 'Então um Bom Dia :)'
         } else if (hora >= 12 && hora <= 18) {
             res.innerHTML += 'Então uma Boa Tarde :D'
-        } else {
+        } else if (hora >= 19 && hora <= 00) {
             res.innerHTML += 'Então uma Boa Noite :p'
-        }
-
+        } else {
+            res.innerHTML += 'Então uma Boa Madrugada xD'
     }
+}
 </script>
 </html>
