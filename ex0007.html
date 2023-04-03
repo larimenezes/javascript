@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        div {
+            background-color: white;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding-top: 10px;
+            padding-left: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        #button {
+            width: 100px;
+            height: 20px;
+            font-weight: bolder;
+            font-size: 17px;
+            background-color: rgba(137, 43, 226, 0.619);
+            border: none;
+            border-radius: 2px;
+           
+        }
+
+        #button:hover {
+            background-color: coral;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Sua nacionalidade aqui!</h1>
+    <div>
+        Em qual país você nasceu? <input type="text" name="txtp" id="txtp">
+        <input id="button" type="button" value="Verificar" onclick="enviar()">
+    </div>
+    <div id="res">
+
+    </div>
+</body>
+<script>
+    function enviar(){
+        var txtn = window.document.querySelector('input#txtp')
+        var res = window.document.querySelector('div#res')
+        var pais = txtn.value
+        res.innerHTML = `<p>Você nasceu no país ${pais}!</p>`
+        if (pais == 'Brasil' || pais == 'brasil') {
+            res.innerHTML += 'Que legal, você é Brasileiro! Está em casa.'
+        } else {
+            res.innerHTML += 'Você é Estrangeiro. Seja bem-vindo(a)!'
+        }
+    }
+</script>
+</html>
