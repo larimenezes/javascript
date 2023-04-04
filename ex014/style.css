@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 body {
     background-color: rgba(117, 153, 66, 0.849);
     font: normal 15pt Arial;
@@ -10,7 +9,6 @@ header {
     text-align: center;
     color: white;
 }
-
 
 section {
     background-color: white;
@@ -26,7 +24,6 @@ div {
     padding: 8px;
     text-align: center;
 }
-
 
 footer {
     text-align: center;
