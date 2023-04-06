@@ -1,0 +1,25 @@
+body {
+    background-color: hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+
+section {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+}
