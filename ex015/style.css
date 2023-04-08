@@ -13,7 +13,7 @@ header {
 section {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    width: 500px;
+    width: 400px;
     border-radius: 10px;
     margin: auto;
     padding: 20px;
@@ -27,9 +27,6 @@ section {
     height: 21.5px;
     width: 64px;
 }
-
-
-
 
 footer {
     text-align: center;
