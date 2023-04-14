@@ -16,12 +16,12 @@ function contar() {
         } 
         if (i < f) {
             for(let c = i; c <= f; c += p) {
-                res.innerHTML += `${c}`
+                res.innerHTML += `${c} `
             }
             
         } else {
             for(let c = i; c >= f; c-= p) {
-                res.innerHTML += `${c}`
+                res.innerHTML += `${c} `
             }
         }
         res.innerHTML += `\u{1F3C1}`
